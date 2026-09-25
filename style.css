@@ -1,0 +1,119 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+}
+}
+
+body {
+  /* 4. Increase line-height */
+    line-height: 1.5;
+  /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    margin: 0 20px;
+    background-color: #FFFCF7;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+/* 10. Create a root stacking context */
+#root, #__next {
+    isolation: isolate;
+}
+
+header {
+    /* background-image: radial-gradient(
+        circle at 50% 30%, 
+    #FFFCF7 0%, 
+    #8CA7F4 35%, 
+    #FFFCF7 70%, 
+    #8ca7f4 100%
+    ); */
+    /* background-image: 
+    radial-gradient(circle at 20% 20%, #FFFCF7 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, #b0c5fe 0%, transparent 50%),
+    radial-gradient(circle at 70% 80%, #FFFCF7 0%, transparent 50%);
+*/}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+}
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#skills {
+    /* border: 2px solid black; */
+}
+
+.skill-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skills-category {
+    display: flex;
+    flex-direction: column;
+}
+
+#projects {
+    
+}
+
+.cardholder {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+}
