@@ -1,0 +1,7 @@
+# Ignore the raw desktop font folders
+# Ignore all font file types
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
